@@ -8,9 +8,9 @@
     "build": "tsc",
     "prepare": "npm run build",
     "test": "jest",
-    "dev-apollo": "npx ts-node examples/server-express-apollo.ts",
-    "dev-yoga": "npx ts-node examples/server-express-yoga.ts",
-    "dev-graphql": "npx ts-node examples/server-express-graphql.ts"
+    "dev-apollo": "npx ts-node examples/express-apollo.ts",
+    "dev-yoga": "npx ts-node examples/express-yoga.ts",
+    "dev-graphql": "npx ts-node examples/express-graphql.ts"
   },
   "dependencies": {
     "@apollo/server": "^4.11.3",
