@@ -1,0 +1,35 @@
+{
+  "name": "graphql-geojson-scalars",
+  "version": "0.1.0",
+  "license": "MIT",
+  "main": "dist/src/index.js",
+  "types": "dist/src/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "prepare": "npm run build",
+    "test": "jest",
+    "dev-apollo": "npx ts-node examples/server-express-apollo.ts",
+    "dev-yoga": "npx ts-node examples/server-express-yoga.ts",
+    "dev-graphql": "npx ts-node examples/server-express-graphql.ts"
+  },
+  "dependencies": {
+    "@apollo/server": "^4.11.3",
+    "@graphql-tools/schema": "^10.0.16",
+    "express": "^4.21.2",
+    "geojson": "^0.5.0",
+    "graphql": "^16.10.0",
+    "graphql-http": "^1.22.4",
+    "graphql-tag": "^2.12.6",
+    "graphql-yoga": "^5.10.10"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.0",
+    "@types/geojson": "^7946.0.15",
+    "@types/graphql": "^14.5.0",
+    "@types/jest": "^29.5.14",
+    "jest": "^29.7.0",
+    "prettier": "^3.4.2",
+    "ts-jest": "^29.2.5",
+    "typescript": "^5.7.3"
+  }
+}
