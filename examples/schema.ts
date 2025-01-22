@@ -1,12 +1,11 @@
 import { makeExecutableSchema } from '@graphql-tools/schema';
-import gql from 'graphql-tag';
 import {
   typeDefs as geojsonTypedefs,
   resolvers as geojsonResolvers,
   GeoJSONTypes,
 } from '../src';
 
-const typeDefs = gql`
+const typeDefs = `
   type Query {
     examplePoint: Point
     exampleLineString: LineString
