@@ -1,17 +1,17 @@
 # GraphQL GeoJSON Scalars
 
-`graphql-geojson-scalars` provides custom GraphQL scalar types for working seamlessly with GeoJSON objects, ensuring they comply with the [RFC 7946 specification](https://tools.ietf.org/html/rfc7946). This library simplifies validation and handling of GeoJSON in GraphQL queries and mutations.
+`geojson-graphql-scalars` provides custom GraphQL scalar types for working seamlessly with GeoJSON objects, ensuring they comply with the [RFC 7946 specification](https://tools.ietf.org/html/rfc7946). This library simplifies validation and handling of GeoJSON in GraphQL queries and mutations.
 
 ## Installation
 
 ```bash
-npm install graphql-geojson-scalars
+npm install geojson-graphql-scalars
 ```
 
 or with Yarn:
 
 ```bash
-yarn add graphql-geojson-scalars
+yarn add geojson-graphql-scalars
 ```
 
 ### Features
@@ -47,18 +47,6 @@ scalar FeatureCollection
 #### Resolvers
 
 ```javascript
-import {
-  PointScalar,
-  LineStringScalar,
-  PolygonScalar,
-  MultiPointScalar,
-  MultiLineStringScalar,
-  MultiPolygonScalar,
-  GeometryCollectionScalar,
-  FeatureScalar,
-  FeatureCollectionScalar,
-} from 'graphql-geojson-scalars';
-
 export const resolvers = {
   Point: PointScalar,
   LineString: LineStringScalar,
